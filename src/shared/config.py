@@ -63,12 +63,10 @@ class Settings(BaseSettings):
         """Validate the env var for the currently selected provider."""
         if self.llm_provider == "gemini":
             self.require_gemini()
-        elif self.llm_provider == "groq":
-            if not self.groq_api_key:
-                raise RuntimeError("GROQ_API_KEY is not set")
-        elif self.llm_provider == "anthropic":
-            if not self.anthropic_api_key:
-                raise RuntimeError("ANTHROPIC_API_KEY is not set")
+        elif self.llm_provider == "groq" and not self.groq_api_key:
+            raise RuntimeError("GROQ_API_KEY is not set")
+        elif self.llm_provider == "anthropic" and not self.anthropic_api_key:
+            raise RuntimeError("ANTHROPIC_API_KEY is not set")
 
     def require_telegram(self) -> None:
         if not self.telegram_bot_token or not self.telegram_owner_id:
