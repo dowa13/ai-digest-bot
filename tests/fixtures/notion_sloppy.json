@@ -1,0 +1,30 @@
+[
+  {
+    "type": "heading_2",
+    "heading_2": {"rich_text": [{"plain_text": "Профиль для AI-бота"}]}
+  },
+  {
+    "type": "paragraph",
+    "paragraph": {"rich_text": [{"plain_text": "Описание: VPN сервис на базе Remnawave panel, для ru/cis."}]}
+  },
+  {
+    "type": "paragraph",
+    "paragraph": {"rich_text": [{"plain_text": "Стек : Remnawave, Xray, Wireguard"}]}
+  },
+  {
+    "type": "paragraph",
+    "paragraph": {"rich_text": [{"plain_text": "**AI-направления**:"}]}
+  },
+  {
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {"rich_text": [{"plain_text": "HIGH: антифрод, биллинг-бот"}]}
+  },
+  {
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {"rich_text": [{"plain_text": "low: голосовой саппорт"}]}
+  },
+  {
+    "type": "paragraph",
+    "paragraph": {"rich_text": [{"plain_text": "Keywords:vpn, proxy ,traffic shaping, anti-fraud"}]}
+  }
+]
